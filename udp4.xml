@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.70 scan initiated Thu Oct 24 02:43:43 2019 as: nmap -sU -sC -sV -&#45;top-ports=200 -oX udp4.xml -iL 12_193.txt -->
+<nmaprun scanner="nmap" args="nmap -sU -sC -sV -&#45;top-ports=200 -oX udp4.xml -iL 12_193.txt" start="1571899423" startstr="Thu Oct 24 02:43:43 2019" version="7.70" xmloutputversion="1.04">
+<scaninfo type="udp" protocol="udp" numservices="200" services="7,9,13,17,19,21-23,37,42,49,53,67-69,80,88,111,120,123,135-139,158,161-162,177,192,199,389,407,427,443,445,464,497,500,514-515,517-518,520,593,623,626,631,664,683,800,989-990,996-999,1001,1008,1019,1021-1034,1036,1038-1039,1041,1043-1045,1049,1068,1419,1433-1434,1645-1646,1701,1718-1719,1782,1812-1813,1885,1900,2000,2002,2048-2049,2148,2222-2223,2967,3052,3130,3283,3389,3456,3659,3703,4000,4045,4444,4500,4672,5000-5001,5060,5093,5351,5353,5355,5500,5632,6000-6001,6346,7938,9200,9876,10000,10080,11487,16680,17185,19283,19682,20031,22986,27892,30718,31337,32768-32773,32815,33281,33354,34555,34861-34862,37444,39213,41524,44968,49152-49154,49156,49158-49159,49162-49163,49165-49166,49168,49171-49172,49179-49182,49184-49196,49199-49202,49205,49208-49211,58002,65024"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1571899424" endtime="1571916123"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.53" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="182">
+<extrareasons reason="port-unreaches" count="182"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" ostype="cisco" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  system: cisco&#xa;  refid: 0.0.0.0&#xa;  stratum: 16"><elem key="receive time stamp">1997-12-11T21:33:44</elem>
+<elem key="system">cisco</elem>
+<elem key="leap">3</elem>
+<elem key="stratum">16</elem>
+<elem key="rootdelay">0.00</elem>
+<elem key="rootdispersion">0.00</elem>
+<elem key="peer">0</elem>
+<elem key="refid">0.0.0.0</elem>
+<elem key="reftime">0x00000000.00000000</elem>
+<elem key="poll">4</elem>
+<elem key="clock">0xB83ADAB7.AB4A1067</elem>
+<elem key="phase">0.000</elem>
+<elem key="freq">0.00</elem>
+<elem key="error">0.00\x0D&#xa;</elem>
+</script></port>
+<port protocol="udp" portid="137"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ns" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h08m24s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h08m24s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="497"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="retrospect" method="table" conf="3"/></port>
+<port protocol="udp" portid="664"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="secure-aux-bus" method="table" conf="3"/></port>
+<port protocol="udp" portid="999"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="applix" method="table" conf="3"/></port>
+<port protocol="udp" portid="1045"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="fpitp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="1718"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="h225gatedisc" method="table" conf="3"/></port>
+<port protocol="udp" portid="2000"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="udp" portid="2048"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dls-monitor" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="5353"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="zeroconf" method="table" conf="3"/></port>
+<port protocol="udp" portid="49152"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49187"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m29s, deviation: 0s, median: -7986d13h42m29s"><elem key="mean">-690039749</elem>
+<elem key="median">-690039749</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="5397" rttvar="9231" to="100000"/>
+</host>
+<host starttime="1571899424" endtime="1571916130"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.113" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="180">
+<extrareasons reason="port-unreaches" count="180"/>
+</extraports>
+<port protocol="udp" portid="19"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="chargen" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="68"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" ostype="cisco" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  system: cisco&#xa;  refid: 0.0.0.0&#xa;  stratum: 16"><elem key="receive time stamp">1997-12-11T21:33:49</elem>
+<elem key="system">cisco</elem>
+<elem key="leap">3</elem>
+<elem key="stratum">16</elem>
+<elem key="rootdelay">0.00</elem>
+<elem key="rootdispersion">0.00</elem>
+<elem key="peer">0</elem>
+<elem key="refid">0.0.0.0</elem>
+<elem key="reftime">0x00000000.00000000</elem>
+<elem key="poll">4</elem>
+<elem key="clock">0xB83ADAB7.D7A6A221</elem>
+<elem key="phase">0.000</elem>
+<elem key="freq">0.00</elem>
+<elem key="error">0.00\x0D&#xa;</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h08m25s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h08m25s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="445"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="664"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="secure-aux-bus" method="table" conf="3"/></port>
+<port protocol="udp" portid="997"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="maitrd" method="table" conf="3"/></port>
+<port protocol="udp" portid="1008"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ufsd" method="table" conf="3"/></port>
+<port protocol="udp" portid="1045"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="fpitp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="1782"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="hp-hcip" method="table" conf="3"/></port>
+<port protocol="udp" portid="1813"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="4672"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="rfa" method="table" conf="3"/></port>
+<port protocol="udp" portid="49158"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49180"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49199"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m24s, deviation: 0s, median: -7986d13h42m24s"><elem key="mean">-690039744</elem>
+<elem key="median">-690039744</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="212001" rttvar="9377" to="249509"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="echo-reply" reason_ttl="48"/>
+<address addr="12.189.193.118" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="162">
+<extrareasons reason="no-responses" count="162"/>
+</extraports>
+<extraports state="filtered" count="38">
+<extrareasons reason="port-unreaches" count="38"/>
+</extraports>
+</ports>
+<times srtt="153858" rttvar="80245" to="474838"/>
+</host>
+<host starttime="1571899424" endtime="1571916131"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.129" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="179">
+<extrareasons reason="port-unreaches" count="179"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  "><elem key="receive time stamp">1997-12-11T21:34:42</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h10m15s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h10m15s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="520"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="route" method="table" conf="3"/></port>
+<port protocol="udp" portid="1023"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="1029"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="solid-mux" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="1812"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="2000"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="udp" portid="3659"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="apple-sasl" method="table" conf="3"/></port>
+<port protocol="udp" portid="5632"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="pcanywherestat" method="table" conf="3"/></port>
+<port protocol="udp" portid="6000"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="X11" method="table" conf="3"/><script id="x11-access" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="udp" portid="9200"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="wap-wsp" method="table" conf="3"/></port>
+<port protocol="udp" portid="27892"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="34862"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49166"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49188"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49194"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="65024"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m17s, deviation: 0s, median: -7986d13h42m17s"><elem key="mean">-690039737</elem>
+<elem key="median">-690039737</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="219489" rttvar="17109" to="287925"/>
+</host>
+<host starttime="1571899424" endtime="1571916131"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.130" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="189">
+<extrareasons reason="port-unreaches" count="189"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" ostype="cisco" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  system: cisco&#xa;  refid: 0.0.0.0&#xa;  stratum: 16"><elem key="receive time stamp">1997-12-11T21:33:52</elem>
+<elem key="system">cisco</elem>
+<elem key="leap">3</elem>
+<elem key="stratum">16</elem>
+<elem key="rootdelay">0.00</elem>
+<elem key="rootdispersion">0.00</elem>
+<elem key="peer">0</elem>
+<elem key="refid">0.0.0.0</elem>
+<elem key="reftime">0x00000000.00000000</elem>
+<elem key="poll">4</elem>
+<elem key="clock">0xB83ADABD.BFC29563</elem>
+<elem key="phase">0.000</elem>
+<elem key="freq">0.00</elem>
+<elem key="error">0.00\x0D&#xa;</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h08m46s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h08m46s</elem>
+</script></port>
+<port protocol="udp" portid="177"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="xdmcp" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="3659"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="apple-sasl" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="32773"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="sometimes-rpc10" method="table" conf="3"/></port>
+<port protocol="udp" portid="41524"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49199"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m27s, deviation: 0s, median: -7986d13h42m27s"><elem key="mean">-690039747</elem>
+<elem key="median">-690039747</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="195179" rttvar="54001" to="411183"/>
+</host>
+<host starttime="1571899424" endtime="1571916134"><status state="up" reason="echo-reply" reason_ttl="50"/>
+<address addr="12.189.193.137" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="171">
+<extrareasons reason="no-responses" count="171"/>
+</extraports>
+<extraports state="filtered" count="29">
+<extrareasons reason="port-unreaches" count="29"/>
+</extraports>
+</ports>
+<times srtt="138636" rttvar="51750" to="345636"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.138" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="172">
+<extrareasons reason="no-responses" count="172"/>
+</extraports>
+<extraports state="filtered" count="28">
+<extrareasons reason="port-unreaches" count="28"/>
+</extraports>
+</ports>
+<times srtt="124167" rttvar="74370" to="421647"/>
+</host>
+<host starttime="1571899424" endtime="1571916132"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.161" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="164">
+<extrareasons reason="no-responses" count="164"/>
+</extraports>
+<extraports state="filtered" count="36">
+<extrareasons reason="port-unreaches" count="36"/>
+</extraports>
+</ports>
+<times srtt="709" rttvar="226" to="100000"/>
+</host>
+<host starttime="1571899424" endtime="1571916134"><status state="up" reason="echo-reply" reason_ttl="111"/>
+<address addr="12.189.193.163" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="148">
+<extrareasons reason="no-responses" count="148"/>
+</extraports>
+<extraports state="filtered" count="52">
+<extrareasons reason="port-unreaches" count="52"/>
+</extraports>
+</ports>
+<times srtt="160726" rttvar="113047" to="612914"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="syn-ack" reason_ttl="64"/>
+<address addr="12.189.193.165" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="173">
+<extrareasons reason="no-responses" count="173"/>
+</extraports>
+<extraports state="filtered" count="27">
+<extrareasons reason="port-unreaches" count="27"/>
+</extraports>
+</ports>
+<times srtt="216031" rttvar="10829" to="259347"/>
+</host>
+<host starttime="1571899424" endtime="1571916134"><status state="up" reason="echo-reply" reason_ttl="111"/>
+<address addr="12.189.193.167" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="171">
+<extrareasons reason="no-responses" count="171"/>
+</extraports>
+<extraports state="filtered" count="29">
+<extrareasons reason="port-unreaches" count="29"/>
+</extraports>
+</ports>
+<times srtt="130844" rttvar="88321" to="484128"/>
+</host>
+<host starttime="1571899424" endtime="1571916131"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.176" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="178">
+<extrareasons reason="no-responses" count="178"/>
+</extraports>
+<port protocol="udp" portid="9"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="discard" method="table" conf="3"/></port>
+<port protocol="udp" portid="49"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="tacacs" method="table" conf="3"/></port>
+<port protocol="udp" portid="69"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="tftp" method="table" conf="3"/></port>
+<port protocol="udp" portid="139"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="udp" portid="464"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="udp" portid="514"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="syslog" method="table" conf="3"/></port>
+<port protocol="udp" portid="664"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="secure-aux-bus" method="table" conf="3"/></port>
+<port protocol="udp" portid="683"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="corba-iiop" method="table" conf="3"/></port>
+<port protocol="udp" portid="1021"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="exp1" method="table" conf="3"/></port>
+<port protocol="udp" portid="1022"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="exp2" method="table" conf="3"/></port>
+<port protocol="udp" portid="1027"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="1039"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="sbl" method="table" conf="3"/></port>
+<port protocol="udp" portid="1813"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="1885"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="vrtstrapserver" method="table" conf="3"/></port>
+<port protocol="udp" portid="3283"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="netassistant" method="table" conf="3"/></port>
+<port protocol="udp" portid="5060"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="udp" portid="9200"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="wap-wsp" method="table" conf="3"/></port>
+<port protocol="udp" portid="9876"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="sd" method="table" conf="3"/></port>
+<port protocol="udp" portid="32773"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="sometimes-rpc10" method="table" conf="3"/></port>
+<port protocol="udp" portid="32815"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49180"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49184"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="53266" rttvar="74393" to="350838"/>
+</host>
+<host starttime="1571899424" endtime="1571916130"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.177" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="149">
+<extrareasons reason="no-responses" count="149"/>
+</extraports>
+<extraports state="filtered" count="51">
+<extrareasons reason="port-unreaches" count="51"/>
+</extraports>
+</ports>
+<times srtt="36897" rttvar="65083" to="297229"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="echo-reply" reason_ttl="47"/>
+<address addr="12.189.193.178" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="167">
+<extrareasons reason="no-responses" count="167"/>
+</extraports>
+<extraports state="filtered" count="33">
+<extrareasons reason="port-unreaches" count="33"/>
+</extraports>
+</ports>
+<times srtt="139764" rttvar="79523" to="457856"/>
+</host>
+<host starttime="1571899424" endtime="1571916131"><status state="up" reason="echo-reply" reason_ttl="47"/>
+<address addr="12.189.193.179" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="174">
+<extrareasons reason="no-responses" count="174"/>
+</extraports>
+<extraports state="filtered" count="26">
+<extrareasons reason="port-unreaches" count="26"/>
+</extraports>
+</ports>
+<times srtt="157320" rttvar="49157" to="353948"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.181" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="174">
+<extrareasons reason="no-responses" count="174"/>
+</extraports>
+<port protocol="udp" portid="80"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="http" method="table" conf="3"/></port>
+<port protocol="udp" portid="111"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="udp" portid="445"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open" reason="udp-response" reason_ttl="64"/><service name="isakmp" product="Cisco VPN Concentrator" ostype="pSOS+" devicetype="security-misc" method="probed" conf="10"><cpe>cpe:/h:cisco:concentrator</cpe></service><script id="ike-version" output="&#xa;  vendor_id: Cisco VPN Concentrator&#xa;  attributes: &#xa;    Cisco Unity&#xa;    XAUTH&#xa;    Dead Peer Detection v1.0&#xa;    IKE FRAGMENTATION"><elem key="vendor_id">Cisco VPN Concentrator</elem>
+<table key="attributes">
+<elem>Cisco Unity</elem>
+<elem>XAUTH</elem>
+<elem>Dead Peer Detection v1.0</elem>
+<elem>IKE FRAGMENTATION</elem>
+</table>
+</script></port>
+<port protocol="udp" portid="626"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="serialnumberd" method="table" conf="3"/></port>
+<port protocol="udp" portid="1024"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="1025"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="blackjack" method="table" conf="3"/></port>
+<port protocol="udp" portid="1030"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="iad1" method="table" conf="3"/></port>
+<port protocol="udp" portid="1034"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="activesync-notify" method="table" conf="3"/></port>
+<port protocol="udp" portid="1043"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="boinc" method="table" conf="3"/></port>
+<port protocol="udp" portid="1434"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="ms-sql-m" method="table" conf="3"/></port>
+<port protocol="udp" portid="1782"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="hp-hcip" method="table" conf="3"/></port>
+<port protocol="udp" portid="3659"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="apple-sasl" method="table" conf="3"/></port>
+<port protocol="udp" portid="3703"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="adobeserver-3" method="table" conf="3"/></port>
+<port protocol="udp" portid="5351"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="nat-pmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="5500"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="securid" method="table" conf="3"/></port>
+<port protocol="udp" portid="19682"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="32768"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="omad" method="table" conf="3"/></port>
+<port protocol="udp" portid="32815"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="41524"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49159"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49166"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49191"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49196"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49205"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49208"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="878" rttvar="294" to="100000"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.182" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="174">
+<extrareasons reason="no-responses" count="174"/>
+</extraports>
+<extraports state="filtered" count="26">
+<extrareasons reason="port-unreaches" count="26"/>
+</extraports>
+</ports>
+<times srtt="15126" rttvar="26938" to="122878"/>
+</host>
+<host starttime="1571899424" endtime="1571916133"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.184" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="167">
+<extrareasons reason="no-responses" count="167"/>
+</extraports>
+<extraports state="filtered" count="33">
+<extrareasons reason="port-unreaches" count="33"/>
+</extraports>
+</ports>
+<times srtt="734" rttvar="143" to="100000"/>
+</host>
+<host starttime="1571899424" endtime="1571916125"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.201" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="188">
+<extrareasons reason="port-unreaches" count="188"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" ostype="cisco" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  system: cisco&#xa;  refid: 0.0.0.0&#xa;  stratum: 16"><elem key="receive time stamp">1997-12-11T21:35:25</elem>
+<elem key="system">cisco</elem>
+<elem key="leap">3</elem>
+<elem key="stratum">16</elem>
+<elem key="rootdelay">0.00</elem>
+<elem key="rootdispersion">0.00</elem>
+<elem key="peer">0</elem>
+<elem key="refid">0.0.0.0</elem>
+<elem key="reftime">0x00000000.00000000</elem>
+<elem key="poll">4</elem>
+<elem key="clock">0xB83ADB11.1C21297E</elem>
+<elem key="phase">0.000</elem>
+<elem key="freq">0.00</elem>
+<elem key="error">0.00\x0D&#xa;</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h10m14s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h10m14s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="664"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="secure-aux-bus" method="table" conf="3"/></port>
+<port protocol="udp" portid="1032"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="iad3" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="1900"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="upnp" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="49163"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49165"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m17s, deviation: 0s, median: -7986d13h42m17s"><elem key="mean">-690039737</elem>
+<elem key="median">-690039737</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="205743" rttvar="6410" to="231383"/>
+</host>
+<host starttime="1571899424" endtime="1571916132"><status state="up" reason="echo-reply" reason_ttl="239"/>
+<address addr="12.189.193.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="165">
+<extrareasons reason="no-responses" count="165"/>
+</extraports>
+<extraports state="filtered" count="33">
+<extrareasons reason="port-unreaches" count="33"/>
+</extraports>
+<port protocol="udp" portid="443"><state state="open" reason="udp-response" reason_ttl="64"/><service name="dtls" method="probed" conf="10"/></port>
+<port protocol="udp" portid="500"><state state="open" reason="udp-response" reason_ttl="64"/><service name="isakmp" product="Cisco VPN Concentrator" ostype="pSOS+" devicetype="security-misc" method="probed" conf="10"><cpe>cpe:/h:cisco:concentrator</cpe></service><script id="ike-version" output="&#xa;  vendor_id: Cisco VPN Concentrator&#xa;  attributes: &#xa;    Cisco Unity&#xa;    XAUTH&#xa;    Dead Peer Detection v1.0&#xa;    IKE FRAGMENTATION"><elem key="vendor_id">Cisco VPN Concentrator</elem>
+<table key="attributes">
+<elem>Cisco Unity</elem>
+<elem>XAUTH</elem>
+<elem>Dead Peer Detection v1.0</elem>
+<elem>IKE FRAGMENTATION</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="206966" rttvar="3768" to="222038"/>
+</host>
+<host starttime="1571899424" endtime="1571916117"><status state="up" reason="echo-reply" reason_ttl="240"/>
+<address addr="12.189.193.209" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="182">
+<extrareasons reason="port-unreaches" count="182"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" ostype="cisco" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  system: cisco&#xa;  refid: 0.0.0.0&#xa;  stratum: 16"><elem key="receive time stamp">1997-12-11T21:35:19</elem>
+<elem key="system">cisco</elem>
+<elem key="leap">3</elem>
+<elem key="stratum">16</elem>
+<elem key="rootdelay">0.00</elem>
+<elem key="rootdispersion">0.00</elem>
+<elem key="peer">0</elem>
+<elem key="refid">0.0.0.0</elem>
+<elem key="reftime">0x00000000.00000000</elem>
+<elem key="poll">4</elem>
+<elem key="clock">0xB83ADB11.B13E8819</elem>
+<elem key="phase">0.000</elem>
+<elem key="freq">0.00</elem>
+<elem key="error">0.00\x0D&#xa;</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h10m25s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h10m25s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="518"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ntalk" method="table" conf="3"/></port>
+<port protocol="udp" portid="1039"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="sbl" method="table" conf="3"/></port>
+<port protocol="udp" portid="1041"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="danf-ak2" method="table" conf="3"/></port>
+<port protocol="udp" portid="1434"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ms-sql-m" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="3283"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="netassistant" method="table" conf="3"/></port>
+<port protocol="udp" portid="4672"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="rfa" method="table" conf="3"/></port>
+<port protocol="udp" portid="10000"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ndmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="10080"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="amanda" method="table" conf="3"/></port>
+<port protocol="udp" portid="32769"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="filenet-rpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="32771"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="sometimes-rpc6" method="table" conf="3"/></port>
+<port protocol="udp" portid="33354"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="41524"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -7986d13h42m24s, deviation: 0s, median: -7986d13h42m24s"><elem key="mean">-690039744</elem>
+<elem key="median">-690039744</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="202616" rttvar="19892" to="282184"/>
+</host>
+<host starttime="1571899424" endtime="1571916128"><status state="up" reason="echo-reply" reason_ttl="48"/>
+<address addr="12.189.193.210" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="open|filtered" count="178">
+<extrareasons reason="no-responses" count="178"/>
+</extraports>
+<port protocol="udp" portid="199"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="smux" method="table" conf="3"/></port>
+<port protocol="udp" portid="497"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="retrospect" method="table" conf="3"/></port>
+<port protocol="udp" portid="500"><state state="open" reason="udp-response" reason_ttl="64"/><service name="isakmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="623"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="asf-rmcp" method="table" conf="3"/></port>
+<port protocol="udp" portid="631"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="ipp" method="table" conf="3"/></port>
+<port protocol="udp" portid="683"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="corba-iiop" method="table" conf="3"/></port>
+<port protocol="udp" portid="990"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="ftps" method="table" conf="3"/></port>
+<port protocol="udp" portid="996"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="vsinet" method="table" conf="3"/></port>
+<port protocol="udp" portid="1022"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="exp2" method="table" conf="3"/></port>
+<port protocol="udp" portid="1033"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="netinfo-local" method="table" conf="3"/></port>
+<port protocol="udp" portid="2049"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="nfs" method="table" conf="3"/></port>
+<port protocol="udp" portid="2222"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="msantipiracy" method="table" conf="3"/></port>
+<port protocol="udp" portid="3703"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="adobeserver-3" method="table" conf="3"/></port>
+<port protocol="udp" portid="5351"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="nat-pmp" method="table" conf="3"/></port>
+<port protocol="udp" portid="5500"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="securid" method="table" conf="3"/></port>
+<port protocol="udp" portid="32769"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="filenet-rpc" method="table" conf="3"/></port>
+<port protocol="udp" portid="34862"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49185"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49188"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49193"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49200"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49209"><state state="filtered" reason="port-unreach" reason_ttl="255" reason_ip="10.0.2.2"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="114561" rttvar="78565" to="428821"/>
+</host>
+<host starttime="1571899424" endtime="1571916130"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.225" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="178">
+<extrareasons reason="port-unreaches" count="178"/>
+</extraports>
+<port protocol="udp" portid="7"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="echo" method="table" conf="3"/></port>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="136"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="profile" method="table" conf="3"/></port>
+<port protocol="udp" portid="158"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="pcmail-srv" method="table" conf="3"/></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:16:c7:19:e4&#xa;  snmpEngineBoots: 4&#xa;  snmpEngineTime: 255d14h10m04s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:16:c7:19:e4</elem>
+<elem key="snmpEngineBoots">4</elem>
+<elem key="snmpEngineTime">255d14h10m04s</elem>
+</script></port>
+<port protocol="udp" portid="623"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="asf-rmcp" method="table" conf="3"/></port>
+<port protocol="udp" portid="683"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="corba-iiop" method="table" conf="3"/></port>
+<port protocol="udp" portid="989"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="ftps-data" method="table" conf="3"/></port>
+<port protocol="udp" portid="996"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="vsinet" method="table" conf="3"/></port>
+<port protocol="udp" portid="1001"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="1022"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="exp2" method="table" conf="3"/></port>
+<port protocol="udp" portid="1029"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="solid-mux" method="table" conf="3"/></port>
+<port protocol="udp" portid="1645"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radius" method="table" conf="3"/></port>
+<port protocol="udp" portid="1646"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="radacct" method="table" conf="3"/></port>
+<port protocol="udp" portid="4500"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="nat-t-ike" method="table" conf="3"/></port>
+<port protocol="udp" portid="5353"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="zeroconf" method="table" conf="3"/></port>
+<port protocol="udp" portid="19283"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="keysrvr" method="table" conf="3"/></port>
+<port protocol="udp" portid="34861"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49192"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49200"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="49201"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="udp" portid="65024"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="93917" rttvar="135481" to="635841"/>
+</host>
+<host starttime="1571899424" endtime="1571916076"><status state="up" reason="reset" reason_ttl="255"/>
+<address addr="12.189.193.226" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="194">
+<extrareasons reason="port-unreaches" count="194"/>
+</extraports>
+<port protocol="udp" portid="67"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="dhcps" method="table" conf="3"/></port>
+<port protocol="udp" portid="69"><state state="open" reason="udp-response" reason_ttl="64"/><service name="tftp" product="Cisco router tftpd" ostype="IOS" devicetype="router" method="probed" conf="10"><cpe>cpe:/a:cisco:tftp_server</cpe><cpe>cpe:/o:cisco:ios</cpe></service></port>
+<port protocol="udp" portid="123"><state state="open" reason="udp-response" reason_ttl="64"/><service name="ntp" product="NTP" version="v4" extrainfo="unsynchronized" method="probed" conf="10"/><script id="ntp-info" output="&#xa;  "><elem key="receive time stamp">1993-04-24T18:36:37</elem>
+</script></port>
+<port protocol="udp" portid="161"><state state="open" reason="udp-response" reason_ttl="64"/><service name="snmp" product="Cisco SNMP service; ciscoSystems SNMPv3 server" method="probed" conf="10"/><script id="snmp-info" output="&#xa;  enterprise: ciscoSystems&#xa;  engineIDFormat: mac&#xa;  engineIDData: 00:00:1c:57:5b:05&#xa;  snmpEngineBoots: 21&#xa;  snmpEngineTime: 54d18h34m41s"><elem key="enterprise">ciscoSystems</elem>
+<elem key="engineIDFormat">mac</elem>
+<elem key="engineIDData">00:00:1c:57:5b:05</elem>
+<elem key="snmpEngineBoots">21</elem>
+<elem key="snmpEngineTime">54d18h34m41s</elem>
+</script></port>
+<port protocol="udp" portid="162"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="snmptrap" method="table" conf="3"/></port>
+<port protocol="udp" portid="1027"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -9678d16h41m53s, deviation: 0s, median: -9678d16h41m53s"><elem key="mean">-836239313</elem>
+<elem key="median">-836239313</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="3524" rttvar="5644" to="100000"/>
+</host>
+<postscript><script id="clock-skew" output="&#xa;  -7986d13h42m17s: &#xa;    12.189.193.129&#xa;    12.189.193.201&#xa;  -7986d13h42m24s: &#xa;    12.189.193.113&#xa;    12.189.193.209"><table key="-7986d13h42m17s">
+<elem>12.189.193.129</elem>
+<elem>12.189.193.201</elem>
+</table>
+<table key="-7986d13h42m24s">
+<elem>12.189.193.113</elem>
+<elem>12.189.193.209</elem>
+</table>
+</script></postscript><runstats><finished time="1571916134" timestr="Thu Oct 24 07:22:14 2019" elapsed="16710.55" summary="Nmap done at Thu Oct 24 07:22:14 2019; 24 IP addresses (24 hosts up) scanned in 16710.55 seconds" exit="success"/><hosts up="24" down="0" total="24"/>
+</runstats>
+</nmaprun>
